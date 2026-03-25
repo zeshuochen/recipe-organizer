@@ -10,7 +10,7 @@
 
 | Skill | Description |
 |-------|-------------|
-| [recipe-organizer](skills/recipe-organizer) | Fetch recipes from Xiaohongshu, YouTube, or Bilibili, extract ingredients & steps, and save clean notes to your Obsidian vault — in English or Chinese |
+| [organize-recipe](skills/organize-recipe) | Fetch recipes from Xiaohongshu, YouTube, or Bilibili, extract ingredients & steps, and save clean notes to your Obsidian vault — in English or Chinese |
 
 ---
 
@@ -31,7 +31,7 @@ Clone this repo and copy the `skills/` directory to your agent's skills path.
 
 ## Quick start
 
-1. **Configure** your vault path in `skills/recipe-organizer/SKILL.md`:
+1. **Configure** your vault path in `skills/organize-recipe/SKILL.md`:
 
 ```
 VAULT_PATH=C:\Users\you\MyVault     # your Obsidian vault
@@ -153,7 +153,7 @@ https://www.youtube.com/watch?v=...   organize recipe
 
 ### 配置
 
-编辑 `skills/recipe-organizer/SKILL.md`，修改以下三项：
+编辑 `skills/organize-recipe/SKILL.md`，修改以下三项：
 
 ```
 VAULT_PATH=    # Obsidian vault 的绝对路径

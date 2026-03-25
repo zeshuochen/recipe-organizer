@@ -1,5 +1,5 @@
 ---
-name: recipe-organizer
+name: organize-recipe
 description: Fetch recipes from Xiaohongshu, YouTube, or Bilibili links, extract ingredients and steps, and save structured notes to an Obsidian vault. Use when the user shares recipe links and asks to organize or save a recipe.
 ---
 
