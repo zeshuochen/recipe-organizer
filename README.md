@@ -1,6 +1,6 @@
-# obsidian-recipes
+# recipe-organizer
 
-**Agent Skills for turning recipe videos and posts into structured Obsidian notes.**
+**Agent Skill for turning recipe videos and posts into structured Obsidian notes.**
 
 > Follows the [Agent Skills specification](https://agentskills.io/specification) — works with Claude Code, Codex CLI, and any skills-compatible agent.
 
@@ -10,7 +10,7 @@
 
 | Skill | Description |
 |-------|-------------|
-| [organize-recipe](skills/organize-recipe) | Fetch recipes from Xiaohongshu, YouTube, or Bilibili, extract ingredients & steps, and save clean notes to your Obsidian vault — in English or Chinese |
+| [recipe-organizer](skills/recipe-organizer) | Fetch recipes from Xiaohongshu, YouTube, or Bilibili, extract ingredients & steps, and save clean notes to your Obsidian vault — in English or Chinese |
 
 ---
 
@@ -19,8 +19,8 @@
 ### Claude Code
 
 ```
-/plugin marketplace add zeshuochen/obsidian-recipes
-/plugin install cooking@obsidian-recipes
+/plugin marketplace add zeshuochen/recipe-organizer
+/plugin install cooking@recipe-organizer
 ```
 
 ### Manual
@@ -31,12 +31,11 @@ Clone this repo and copy the `skills/` directory to your agent's skills path.
 
 ## Quick start
 
-1. **Configure** your vault path in `skills/organize-recipe/SKILL.md`:
+1. **Configure** your vault path in `skills/recipe-organizer/SKILL.md`:
 
 ```
 VAULT_PATH=C:\Users\you\MyVault     # your Obsidian vault
 RECIPES_FOLDER=Recipes              # folder for recipe notes
-INDEX_FILE=Recipes/index.md         # optional: delete this line if you don't use an index
 ```
 
 2. **Share a link** and ask your agent to organize the recipe:
@@ -64,7 +63,6 @@ https://www.youtube.com/watch?v=...   organize recipe
 1. **Fetch** — open each link in Chrome and extract the post body, description, and comments
 2. **Classify** — distinguish recipe posts from technique videos (e.g. deboning demos); merge techniques as steps into the related recipe
 3. **Write** — create a structured Markdown note in your Obsidian vault using the matching language template
-4. **Index** — append a wikilink to your recipe index file (skipped if `INDEX_FILE` is not configured)
 
 ---
 
@@ -129,7 +127,6 @@ https://www.youtube.com/watch?v=...   organize recipe
 ## 小贴士
 - 鸡腿肉一定要擦干水分，煎时不溅油、更容易上色。
 - 半可乐半开水口味更清爽，不那么甜腻。
-- 油不用多，鸡腿肉有自身油脂。
 
 ## 来源
 - [可乐鸡腿饭](https://www.xiaohongshu.com/explore/67e0ef8e000000001e00b1f8)
@@ -147,18 +144,17 @@ https://www.youtube.com/watch?v=...   organize recipe
 ### 安装
 
 ```
-/plugin marketplace add zeshuochen/obsidian-recipes
-/plugin install cooking@obsidian-recipes
+/plugin marketplace add zeshuochen/recipe-organizer
+/plugin install cooking@recipe-organizer
 ```
 
 ### 配置
 
-编辑 `skills/organize-recipe/SKILL.md`，修改以下三项：
+编辑 `skills/recipe-organizer/SKILL.md`，修改以下两项：
 
 ```
 VAULT_PATH=    # Obsidian vault 的绝对路径
 RECIPES_FOLDER=   # vault 内食谱文件夹
-INDEX_FILE=    # 可选：食谱索引文件路径，不需要索引则删除此行
 ```
 
 ---

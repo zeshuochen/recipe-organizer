@@ -1,5 +1,5 @@
 ---
-name: organize-recipe
+name: recipe-organizer
 description: Fetch recipes from Xiaohongshu, YouTube, or Bilibili links, extract ingredients and steps, and save structured notes to an Obsidian vault. Use when the user shares recipe links and asks to organize or save a recipe.
 ---
 
@@ -14,7 +14,6 @@ Edit these values before first use:
 ```
 VAULT_PATH=C:\Users\you\MyVault     # absolute path to your Obsidian vault
 RECIPES_FOLDER=Recipes              # folder inside the vault for recipe notes
-INDEX_FILE=Recipes/index.md         # optional: index file listing all recipes; delete this line to skip indexing
 ```
 
 ## Workflow
@@ -93,15 +92,6 @@ Use the `Write` tool to create `<VAULT_PATH>/<RECIPES_FOLDER>/<dish name>.md`.
 ## Source
 - [Title](link)
 ```
-
-### Step 5 — Update the index (optional)
-
-Skip this step if `INDEX_FILE` is not configured.
-
-`Read` the index file first, then use `Edit` to append at the end:
-
-Chinese: `## [[菜名]]`
-English: `## [[Dish Name]]`
 
 ## Notes
 
