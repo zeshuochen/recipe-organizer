@@ -153,8 +153,8 @@ https://www.youtube.com/watch?v=...   organize recipe
 编辑 `skills/recipe-organizer/SKILL.md`，修改以下两项：
 
 ```
-VAULT_PATH=    # Obsidian vault 的绝对路径
-RECIPES_FOLDER=   # vault 内食谱文件夹
+VAULT_PATH=C:\Users\you\MyVault     # Obsidian vault 的绝对路径
+RECIPES_FOLDER=Recipes              # vault 内食谱文件夹
 ```
 
 ---
